@@ -7,3 +7,5 @@ echo "src-git nikki https://github.com/nikkinikki-org/OpenWrt-nikki.git;main" >>
 git clone https://github.com/gdy666/luci-app-lucky.git package/lucky
 git clone https://github.com/rufengsuixing/luci-app-adguardhome.git package/adguardhome/luci-app-adguardhome
 git clone https://github.com/AdguardTeam/AdGuardHome package/adguardhome/AdGuardHome
+
+sed -i 's/\/bin\/ash/\/usr\/bin\/zsh/g' package/base-files/files/etc/passwd
