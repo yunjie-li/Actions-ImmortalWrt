@@ -9,13 +9,13 @@ git clone https://github.com/rufengsuixing/luci-app-adguardhome.git package/adgu
 git clone https://github.com/AdguardTeam/AdGuardHome package/adguardhome/AdGuardHome
 
 # add oh my zsh
-mkdir -p files/root
-git clone --depth=1 https://github.com/ohmyzsh/ohmyzsh.git files/root/.oh-my-zsh
-rm -rf files/root/.oh-my-zsh/.git
-cat > files/root/.zshrc << 'EOF'
-export ZSH=$HOME/.oh-my-zsh
-ZSH_THEME="ys"
-plugins=(git)
-source $ZSH/oh-my-zsh.sh
-EOF
-sed -i 's/\/bin\/ash/\/usr\/bin\/zsh/g' package/base-files/files/etc/passwd
+# mkdir -p files/root
+# git clone --depth=1 https://github.com/ohmyzsh/ohmyzsh.git files/root/.oh-my-zsh
+# rm -rf files/root/.oh-my-zsh/.git
+# cat > files/root/.zshrc << 'EOF'
+# export ZSH=$HOME/.oh-my-zsh
+# ZSH_THEME="ys"
+# plugins=(git)
+# source $ZSH/oh-my-zsh.sh
+# EOF
+# sed -i 's/\/bin\/ash/\/usr\/bin\/zsh/g' package/base-files/files/etc/passwd
